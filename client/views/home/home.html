@@ -1,0 +1,29 @@
+<template name="Home">
+  <div class="container">
+    <h4>(2000ms delay)</h4>
+    <div class="col-md-6">
+      <h2>Latancy compensation</h2>
+      <ul>
+        {{#each comments}}
+          <li>{{text}}</li>
+        {{/each}}
+      </ul>
+      <form name="add-comment-lc">
+        <input class="comment-text form-control" placeholder="Comment" required/>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <h2>No latancy compensation</h2>
+      <ul>
+        {{#each comments}}
+          <li>{{text}}</li>
+        {{/each}}
+      </ul>
+      <form name="add-comment-no-lc">
+        <div class="form-group">
+          <input class="comment-text form-control" placeholder="Comment" required/>
+        </div>
+      </form>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,28 @@
+<template name="Header">
+  <header class="navbar">
+    <nav class="navbar navbar-default navbar-galaxy navbar-fixed-top" role="navigation">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://ternopiljs.meteor.com">TernopilJS</a>
+      </div>
+      <div class="collapse navbar-collapse navbar-ex1-collapse" style="padding-top: 2px;">
+        <ul class="nav navbar-nav">
+          <li class="{{activeRouteClass 'home'}}">
+            <a href="{{pathFor route='home'}}">Latency compensation</a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <div class="navbar-form navbar-left login-buttons login-button">
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+</template>
